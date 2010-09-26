@@ -1,0 +1,10 @@
+body {}
+.leftPanel{
+  float: left;
+}
+.centerPanel{
+  float: left;
+}
+.rightPanel{
+  float: none;
+}
