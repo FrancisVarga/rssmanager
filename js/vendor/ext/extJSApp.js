@@ -1,4 +1,13 @@
 Ext.onReady(function() {
+
+	var appBar = new Ext.Toolbar( {
+		renderTo : 'appButtonBar',
+		items : {
+			xtype : 'tbbutton',
+			text : 'Add RSS Feed'
+		}
+	});
+
 	// Menu containing actions
 	var tabActions = new Ext.Panel( {
 		frame : true,
@@ -56,9 +65,9 @@ Ext.onReady(function() {
 	// Configure viewport
 	viewport = new Ext.Viewport( {
 		layout : 'border',
-		items : [ actionPanel, tabPanel ]
+		items : [ appBar, actionPanel, tabPanel ]
 	});
-	
+
 	// Adds tab to center panel
 	function addTab(tabTitle, targetUrl, closable) {
 		tabPanel.add( {
@@ -108,7 +117,7 @@ Ext.onReady(function() {
 	actionPanel.body.on('mousedown', doAction, null, {
 		delegate : 'a'
 	});
-	
+
 	// Use functions
 	addTab("About", 'templates/pages/about.html', false);
 	addTab("Application Logs", "", false);
