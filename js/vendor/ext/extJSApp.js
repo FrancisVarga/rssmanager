@@ -28,7 +28,7 @@ Ext.onReady(function() {
 		deferredRender : false,
 		autoScroll : true,
 		margins : '0 4 4 0',
-		activeTab : 0,
+		activeTab : 1,
 		items : [ {
 			id : 'tab1',
 			contentEl : 'tabs',
@@ -44,7 +44,6 @@ Ext.onReady(function() {
 		deferredRender : false,
 		autoScroll : true,
 		margins : '0 4 4 0',
-		activeTab : 1,
 		items : [ {
 			id : 'tab2',
 			contentEl : 'tabs',
@@ -112,5 +111,5 @@ Ext.onReady(function() {
 	
 	// Use functions
 	addTab("About", 'templates/pages/about.html', false);
-	addTab("Application Logs", "", false)
+	addTab("Application Logs", "", false);
 });
