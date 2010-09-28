@@ -111,5 +111,6 @@ Ext.onReady(function() {
 	});
 	
 	// Use functions
-	addTab("About", 'templates/pages/about.html', false)
+	addTab("About", 'templates/pages/about.html', false);
+	addTab("Application Logs", "", false)
 });
