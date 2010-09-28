@@ -2,7 +2,6 @@
 
   var app = $.sammy('#container', function() {
 
-
   });
 
   $(function() {

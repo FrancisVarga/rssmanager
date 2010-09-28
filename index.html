@@ -1,25 +1,40 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>RSS Manager</title>
-  
-  <script src="js/ext-all.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/vendor/ext/center.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/vendor/ext/leftPanel.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/vendor/ext/rightPanel.js" type="text/javascript" charset="utf-8"></script>
-  <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
-  <!--[if lt IE 8]>
-  <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <![endif]-->
-</head>
-<body>
-  <div id="container">
-      <h1>ExtJS Test Project</h1>
-      <div id="leftPanel"></div>
-      <div id="centerPanel"></div>
-      <div id="rightPanel"></div>
-  </div>
-  <script src="js/default.js" type="text/javascript" charset="utf-8"></script>
-</body>
+  <head>
+    <title>RSS - Manager</title>
+    
+    <script src="js/vendor/ext/ext-base.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/vendor/ext/extAll.js" type="text/javascript" charset="utf-8"></script>
+    <link href="css/extJSAll.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <link href="css/extJS.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="http://use.typekit.com/anv7boz.js"></script>
+    
+    <script type="text/javascript">
+      //<![CDATA[
+        try{Typekit.load();}catch(e){}
+      //]]>
+    </script>
+   <!--[if lt IE 8]>
+      <link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+  </head>
+  <body>
+    <div id="container">
+        
+    </div>
+    <ul id="actions" class="x-hidden">
+        <li>
+    		<a id="use" href="#">Use Existing Tab</a>
+    	</li>
+    	<li>
+    		<a id="create" href="#">Create New Tab</a>
+    	</li>
+    </ul>
+    <div id="tabs"></div>
+    <script src="js/default.js" type="text/javascript" charset="utf-8"></script>
+     <script src="js/vendor/ext/extJSApp.js" type="text/javascript" charset="utf-8"></script>
+  </body>
 </html>

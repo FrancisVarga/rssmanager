@@ -1,3 +1,3 @@
 function(doc) {
-  emit([doc.type], doc._id);
+  emit([doc.name], doc._id);
 }

@@ -9048,7 +9048,6 @@ window.jQuery = window.$ = jQuery;
 
   var app = $.sammy('#container', function() {
 
-
   });
 
   $(function() {

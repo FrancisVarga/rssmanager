@@ -1,10 +1,10 @@
-body {}
-.leftPanel{
-  float: left;
+h1 {
+  font-family: "angie-sans-1","angie-sans-2";
+  font-size: 26pt;
+  font-weight: bold;
 }
-.centerPanel{
-  float: left;
-}
-.rightPanel{
-  float: none;
+
+#container
+{
+    
 }

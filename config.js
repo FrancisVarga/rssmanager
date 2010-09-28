@@ -1,5 +1,5 @@
 {
-  "id": "firstApp",
+  "id": "RSSManager",
   "mapDirectories": {
   "Jimfile": false,
   "sass": false,
