@@ -9,4 +9,14 @@ jquery 1.4.2
 jquery.couch 0.11
 sammy 0.6.1
 sammy.couch 0.1.0
+
+//All Ext Files
+ext/FeedGrid
+ext/FeedPanel
+ext/FeedViewer
+ext/FeedWindow
+ext/MainPanel
+ext/SessionProvider
+ext/TabCloseMenu
+
 js/app

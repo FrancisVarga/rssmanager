@@ -1,18 +1,21 @@
+<!DOCTYPE HTML>
 <html>
 <head>
 <title>RSS - Manager</title>
 
 <meta charset="utf-8">
-<title></title>
+
 <meta name="description" content="">
 <meta name="author" content="Francis Varga">
-<script type="text/javascript" src="http://use.typekit.com/anv7boz.js"></script>
 
-<script src="js/vendor/ext/ext-base.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/vendor/ext/extAll.js" type="text/javascript" charset="utf-8"></script>
-<link href="css/extJSAll.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<link href="css/extJS.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="css/ext-all.css" media="screen, projection" rel="stylesheet" type="text/css" />
 <link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/vendor/ext/ext-base.js"></script>
+<script type="text/javascript" src="js/vendor/ext/ext-all.js"></script>
+
+<script type="text/javascript" src="http://use.typekit.com/anv7boz.js"></script>
+	
 
 <script type="text/javascript">
       //<![CDATA[
@@ -21,18 +24,25 @@
     </script>
 </head>
 
-<body> 
-	<div id="container">
-		<div id="appButtonBar"></div>
-			<ul id="actions" class="x-hidden"> 
-				<li><a id="use" href="#">Use Existing Tab</a></li> 
-				<li><a id="create" href="#">Create New Tab</a></li> 
-			</ul> 
-		<div id="tabs"></div> 
-	</div>
-	
-	<script src="js/default.js" type="text/javascript" charset="utf-8"></script> 
-	<script src="js/vendor/ext/extJSApp.js" type="text/javascript" charset="utf-8"></script> 
-	
+<body>
+
+<div id="container">
+<div id="header">
+<div style="float: right; margin: 5px;" class="x-small-editor"></div>
+</div>
+</div>
+
+<!-- Template used for Feed Items --> 
+<div id="preview-tpl" style="display:none;"> 
+    <div class="post-data"> 
+        <span class="post-date">{pubDate:date("M j, Y, g:i a")}</span> 
+        <h3 class="post-title">{title}</h3> 
+        <h4 class="post-author">by {author:defaultValue("Unknown")}</h4> 
+    </div> 
+    <div class="post-body">{content:this.getBody}</div> 
+</div> 
+
+<script src="js/default.js" type="text/javascript" charset="utf-8"></script>
+
 </body>
 </html>
